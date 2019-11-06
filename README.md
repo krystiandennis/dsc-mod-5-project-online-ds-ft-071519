@@ -30,6 +30,7 @@ The Kaggle dataset contains information on flight delays and cancellation for 20
 - worst days.jpg: an image file that contains travel stats for Holiday Season 2018
 - XGB Feature Importance.png: an image file that contains XGBoost Feature Importance
 - Predicting Holiday Flight Delays.pdf: presentation slides that hightlight the results from this project
+- cf_matrix.py: file containing function to make plot an sklearn Confusion Matrix cm using a Seaborn heatmap visualization
 
 ## Requirements
 
@@ -71,7 +72,18 @@ warnings.filterwarnings("ignore")
 
 ## Findings
 
-According to our models, we chose XGBoost for predictions with an accuracy score of 93.7%. The top 5 most important features with importances scores are below:
+According to our models, we chose XGBoost for predictions with an accuracy score of 93.7%. 
+
+Best Model Parameters:
+
+* **Colsample Bytree**: 0.7
+* **Max Depth**: 10
+* **Number of Estimators**: 40
+### Confusion Matrix
+
+<img src= 'XGB Confusion Matrix.png' height=50% width=50%>
+
+The top 5 most important features with importances scores are below:
 
 * **DISTANCE**: 0.23953465
 * **DEST**: 0.19549185
